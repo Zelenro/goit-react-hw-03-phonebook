@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyledForm } from './ContactForm.styled';
+import { StyledAddContactBtn, StyledForm } from './ContactForm.styled';
 
 export class ContactForm extends Component {
   state = {
@@ -48,7 +48,7 @@ export class ContactForm extends Component {
           onChange={this.handleChange}
           placeholder="Enter Phone Number"
         />
-        <button type="submit">Add Contact</button>
+        <StyledAddContactBtn type="submit">Add Contact</StyledAddContactBtn>
       </StyledForm>
     );
   }
